@@ -1,6 +1,5 @@
-//
-// Created by rinat on 12/18/20.
-//
+// Copyright 2020 Rinat <rinamuka4@gmail.com>
+
 #include "parser.hpp"
 
 #include "boost/filesystem.hpp"
@@ -58,16 +57,14 @@ parserOfDir::parserOfDir(std::string pathForParse) {
   }
 }
 
-std::stringstream parserOfDir::printAllFiles() {
+
+
+std::string parserOfDir::printFormatted() {
   std::stringstream ss;
   for (auto file : files) {
     ss << file.parent_path().filename().string() << " "
-              << file.filename().string() << std::endl;
+       << file.filename().string() << std::endl;
   }
-  return ss;
-}
-
-std::string parserOfDir::printFormatted(std::stringstream ss) {
   for (auto acc : accounts){
     ss<<"broker:"<<acc.getBrocker()<<" "<<"account:"<<
     acc.getAccountNum()<<" "<<"files:"<<acc.getFileSum()<<

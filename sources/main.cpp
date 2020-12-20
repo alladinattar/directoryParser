@@ -1,9 +1,7 @@
-// Copyright 2020 Your Name <your_email>
+// Copyright 2020 Rinat <rinamuka4@gmail.com>
 
-#include "boost/filesystem.hpp"
-#include "iomanip"
+
 #include "iostream"
-#include "regex"
 #include "parser.hpp"
 int main(int argc, char *argv[]) {
   std::string path;
@@ -17,5 +15,5 @@ int main(int argc, char *argv[]) {
 
   parserOfDir parser(path);
   parser.assembleFilesForAcc();
-  std::cout<<parser.printFormatted(parser.printAllFiles());
+  std::cout<<parser.printFormatted();
 }

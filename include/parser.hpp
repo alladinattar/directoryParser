@@ -1,4 +1,4 @@
-// Copyright 2020 Your Name <your_email>
+// Copyright 2020 Rinat <rinamuka4@gmail.com>
 
 #ifndef INCLUDE_HEADER_HPP_
 #define INCLUDE_HEADER_HPP_
@@ -14,10 +14,9 @@ class parserOfDir{
   std::set<std::string> accountsStrings;
   std::vector<account> accounts;
  public:
-  parserOfDir(std::string pathForParse);
+  explicit parserOfDir(std::string pathForParse);
   void assembleFilesForAcc();
-  std::stringstream printAllFiles();
-  std::string printFormatted(std::stringstream ss);
+  std::string printFormatted();
 
 };
 #endif // INCLUDE_HEADER_HPP_

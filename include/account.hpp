@@ -1,3 +1,4 @@
+// Copyright 2020 Rinat <rinamuka4@gmail.com>
 
 #include "boost/filesystem.hpp"
 #include "iostream"
