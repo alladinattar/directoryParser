@@ -37,7 +37,7 @@ add_library(${PROJECT_NAME} STATIC
         sources/parser.cpp )
 add_executable(main
         sources/main.cpp
-        )
+        sources/account.cpp sources/parser.cpp include/parser.hpp)
 add_executable(tests
         ${CMAKE_CURRENT_SOURCE_DIR}/tests/test.cpp
         )
